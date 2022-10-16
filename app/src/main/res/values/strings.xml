@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">RethinkDNS</string>
+    <string name="app_name">System DNS</string>
     <string name="app_name_small_case">rethink</string>
     <string name="app_name_rethink">Rethink</string>
     <string name="title_about">About</string>
