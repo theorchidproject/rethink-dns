@@ -27,7 +27,6 @@
         android:allowBackup="false"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
-        android:enabled="@bool/is_launcher_enabled"
         android:largeHeap="true"
         android:roundIcon="@drawable/ic_launcher"
         android:supportsRtl="true"
@@ -60,6 +59,19 @@
                 <data android:host="*" />
             </intent-filter>
         </activity>
+
+        <activity-alias
+            android:name=".LauncherActivity"
+            android:targetActivity=".files.LauncherActivity"
+            android:enabled="@bool/is_launcher_enabled"
+            android:label="@string/app_name"
+            android:icon="@drawable/ic_launcher" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+            <meta-data android:name="android.app.shortcuts" android:resource="@xml/shortcuts" />
+        </activity-alias>
         <activity
             android:name=".ui.DnsDetailActivity"
             android:finishOnTaskLaunch="true" />

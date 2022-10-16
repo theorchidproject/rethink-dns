@@ -13,5 +13,5 @@
 
 <resources>
     <!-- if is visable in launcher. -->
-    <bool name="is_launcher_enabled">false</bool>
+    <bool name="is_launcher_enabled">true</bool>
 </resources>
