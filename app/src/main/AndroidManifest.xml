@@ -41,6 +41,7 @@
         <activity
             android:name=".ui.HomeScreenActivity"
             android:exported="true"
+            android:enabled="@bool/is_launcher_enabled"
             android:launchMode="singleTask">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
